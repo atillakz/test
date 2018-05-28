@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.clickMeButton) Button clickMeButton;
     @BindView(R.id.counterTextView) TextView counterTextView;
+    @BindView(R.id.testButton) Button testButton;
 
 
     @Override
@@ -31,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
         counterTextView.setText("Count: ");
 
         clickMeButton.setOnClickListener(this::increment);
+
+        testButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, TestActivity.class);
+            startActivity(intent);
+        });
 
     }
 

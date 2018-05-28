@@ -16,11 +16,19 @@
         />
 
     <Button
-        android:layout_below="@+id/hello"
+        android:layout_below="@+id/counterTextView"
         android:id="@+id/clickMeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Click me"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/testButton"
+        android:layout_below="@+id/clickMeButton"
+        android:text="start test activity"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
